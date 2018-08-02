@@ -15,4 +15,5 @@ var plusOne = function(digits) {
     return result;
 };
 
-console.log(plusOne[9]);
+let f = plusOne([9]);
+console.log(f);

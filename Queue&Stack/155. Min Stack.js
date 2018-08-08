@@ -1,6 +1,14 @@
 /**
  * initialize your data structure here.
  */
+ /** 
+ * Your MinStack object will be instantiated and called as such:
+ * var obj = Object.create(MinStack).createNew()
+ * obj.push(x)
+ * obj.pop()
+ * var param_3 = obj.top()
+ * var param_4 = obj.getMin()
+ */
 var MinStack = function() {
     this.stack = new Array();
 };
@@ -34,11 +42,7 @@ MinStack.prototype.getMin = function() {
     return Math.min.apply({},this.stack);  
 };
 
-/** 
- * Your MinStack object will be instantiated and called as such:
- * var obj = Object.create(MinStack).createNew()
- * obj.push(x)
- * obj.pop()
- * var param_3 = obj.top()
- * var param_4 = obj.getMin()
+
+ /*
+ 	However, to retrieve the minimum element in constant time, a efficient way may be adding a minstack which always store the minest element at the top.
  */

@@ -1,1 +1,3 @@
-My JavaScript solution to the leetcode problems. 
+* JavaScript solution to the leetcode problems
+
+* Basic data structures
